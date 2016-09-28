@@ -34,7 +34,7 @@ class Antlr4Plugin implements Plugin<Project> {
             antlr4
         }
         project.dependencies {
-            antlr4 'com.tunnelvisionlabs:antlr4:4.5.3'
+            antlr4 project.files('lib/antlr4.jar')
         }
 
         project.task('antlr4', type:Antlr4Task)
